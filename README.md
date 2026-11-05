@@ -1,5 +1,7 @@
 # StockFlow — Offline Inventory
 
+[![Android verification](https://github.com/sk784/StockFlow/actions/workflows/android.yml/badge.svg)](https://github.com/sk784/StockFlow/actions/workflows/android.yml)
+
 Нативное Android-приложение для инвентаризации при нестабильной связи. Сотрудник получает задание, находит товар по штрихкоду и вводит фактическое количество. Результат сохраняется на устройстве и отправляется серверу, когда доступны сеть и фоновая работа. Одновременные изменения одного товара требуют явного решения пользователя.
 
 Самостоятельный проект с учебными данными и локальным REST backend в репозитории. Основные инженерные задачи — сохранность офлайн-изменений, безопасный повтор запросов и восстановление после ошибок.
@@ -116,7 +118,7 @@ bash scripts/verify_android.sh --connected
 
 Без устройства уберите `--connected`; при нескольких устройствах задайте `ANDROID_SERIAL`. Логи, APK и отчёты сохраняются в `build/verification/run-*`. Для UI smoke нужен выделенный эмулятор: сценарий очищает данные приложения, требует `--reset-app` и свободный порт 8080.
 
-[GitHub Actions](.github/workflows/android.yml) настроен на сборку, JVM/lint/backend/SQL и Android-тесты на API 26/36 с сохранением артефактов. Удалённый запуск CI пока не подтверждён; локально проверен API 36.
+[GitHub Actions](.github/workflows/android.yml) настроен на сборку, JVM/lint/backend/SQL и Android-тесты на API 26/36 с сохранением артефактов. [Удалённый прогон прошёл успешно](https://github.com/sk784/StockFlow/actions/runs/42071720258): сборка и проверки на Ubuntu, по 35 Android-тестов на API 26 и 36. Локально проверен API 36.
 
 ## Текущие ограничения
 
