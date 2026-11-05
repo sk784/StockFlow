@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StockFlow</string>
+    <string name="quantity_hint">Введите целое число. Если товара нет — 0.</string>
+    <string name="discard_action">Отменить изменения товара</string>
+    <string name="discard_title">Отменить локальные изменения?</string>
+    <string name="discard_explanation">Товар «%1$s»: все его неотправленные изменения будут отменены и заменены свежими данными сервера. Если товар удалён на сервере, он будет удалён и с устройства. Изменения других товаров сохранятся. Для проверки нужна сеть.</string>
+    <string name="discard_confirm">Отменить изменения</string>
+    <string name="discard_in_progress">Проверка сервера…</string>
+    <string name="cancel">Назад</string>
+</resources>
